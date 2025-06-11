@@ -63,8 +63,6 @@ function renderTodo() {
 
             // Setup task label
             Span.textContent = `Id: ${value.id}    ${value.name}`;
-            // Span.style.fontSize = "2rem";
-            // Span.style.width = "60vw";
 
             // Setup delete button
             btn.textContent = "delete";
