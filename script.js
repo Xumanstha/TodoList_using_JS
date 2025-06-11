@@ -62,7 +62,7 @@ function renderTodo() {
             li.appendChild(Span);
 
             // Setup task label
-            Span.textContent = `Id: ${value.id}    ${value.name}`;
+            Span.textContent = value.name;
 
             // Setup delete button
             btn.textContent = "delete";
