@@ -49,7 +49,7 @@ function renderTodo() {
             // Style the list item
             li.style.display = "flex";
             li.style.justifyContent = "space-around";
-            li.className = "list-group-item active";
+            // li.className = "list-group-item active";
             li.id = `Id${value.id}`;
 
             // Append list item to the container
@@ -63,12 +63,13 @@ function renderTodo() {
 
             // Setup task label
             Span.textContent = `Id: ${value.id}    ${value.name}`;
-            Span.style.fontSize = "2rem";
-            Span.style.width = "60vw";
+            // Span.style.fontSize = "2rem";
+            // Span.style.width = "60vw";
 
             // Setup delete button
             btn.textContent = "delete";
             btn.id = `Btn${value.id}`;
+            btn.className="delete-btn";
 
             let UniqueCheckbox = document.getElementById(`Check${value.id}`);
 
